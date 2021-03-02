@@ -1,0 +1,12 @@
+[
+ {
+  "id": 12345,
+  "full_name": "Alice",
+  "isFullTime": true
+ },
+ {
+  "id": 67890,
+  "full_name": "Bob",
+  "isFullTime": fals
+ }
+]
