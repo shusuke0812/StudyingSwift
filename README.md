@@ -13,3 +13,7 @@ GitHubリポジトリにあるソースを読む中で「悩んだこと」「�
 
 
 ## 参考文献
+- コード規約
+  - [Swift API Design Guidelines](https://swift.org/documentation/api-design-guidelines/#naming)
+  - [エウレカ](https://github.com/eure/swift-style-guide)
+  - [クックパッド](https://github.com/cookpad/styleguide/blob/master/swift.ja.md)
