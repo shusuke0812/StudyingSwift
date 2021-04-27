@@ -10,6 +10,10 @@ GitHubリポジトリにあるソースを読む中で「悩んだこと」「�
   - ファーストクラスコレクション（first_class_collection.swift）
 - 基礎（Basic）
   - do文を用いたコードブロック内での定数／変数の定義（do_syntax.swift）
+  - クロージャーによる初期化（initialization_closure.swift）
+  - プロパティラッパ（property_wrapper.swift）
+- デザインパターン（DesignPattern）
+  - オブザーバー（observable.swift）
 
 
 ## 参考文献
