@@ -12,6 +12,7 @@ GitHubリポジトリにあるソースを読む中で「悩んだこと」「�
   - do文を用いたコードブロック内での定数／変数の定義（do_syntax.swift）
   - クロージャーによる初期化（initialization_closure.swift）
   - プロパティラッパ（property_wrapper.swift）
+  - カラーリテラル（color_literal.swift）
 - デザインパターン（DesignPattern）
   - オブザーバー（observable.swift）
 
