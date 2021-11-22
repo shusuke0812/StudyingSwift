@@ -13,6 +13,8 @@ GitHubリポジトリにあるソースを読む中で「悩んだこと」「�
   - クロージャーによる初期化（initialization_closure.swift）
   - プロパティラッパ（property_wrapper.swift）
   - カラーリテラル（color_literal.swift）
+  - OperationQueu（operation_queue.swift）
+  - 参照渡し（inout.swift）
 - デザインパターン（DesignPattern）
   - オブザーバー（observable.swift）
 
