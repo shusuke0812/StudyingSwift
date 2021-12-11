@@ -1,3 +1,8 @@
+/**
+ * RawRepresentable
+ * - String, Int, Float以外でも値を持たせたり、呼び出せたりできるようにするプロトコル
+ */
+
 import UIKit
 
 public enum Color {
