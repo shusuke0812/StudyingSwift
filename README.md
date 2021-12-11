@@ -15,6 +15,7 @@ GitHubリポジトリにあるソースを読む中で「悩んだこと」「�
   - カラーリテラル（color_literal.swift）
   - OperationQueu（operation_queue.swift）
   - 参照渡し（inout.swift）
+  - RawRepresentableプロトコル（rawrepresentable.swift）
 - デザインパターン（DesignPattern）
   - オブザーバー（observable.swift）
 
