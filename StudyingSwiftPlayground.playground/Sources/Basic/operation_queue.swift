@@ -8,29 +8,28 @@
 import Foundation
 
 open class MyOperation: Operation {
-    let number: Int
+    let queueName: String
     
-    public init(number: Int) {
-        self.number = number
+    public init(queueName: String) {
+        self.queueName = queueName
     }
     
     open override func main() {
         if isCancelled {
             return
         }
-        sleep(2)
-        print("number = \(number), \(Date().timeIntervalSince1970)")
+        //sleep(2)
+        print("queue=\(queueName), time=\(Date().timeIntervalSince1970)")
     }
 }
 
 // MARK: - Source
 /*
- 
 import Foundation
 
-let operation1 = MyOperation(number: 1)
-let operation2 = MyOperation(number: 2)
-let operation3 = MyOperation(number: 3)
+let operation1 = MyOperation(queueName: "1")
+let operation2 = MyOperation(queueName: "2")
+let operation3 = MyOperation(queueName: "3")
  
 // タスクが終了・キャンセルしたときに呼ばれる
 operation1.completionBlock = {
