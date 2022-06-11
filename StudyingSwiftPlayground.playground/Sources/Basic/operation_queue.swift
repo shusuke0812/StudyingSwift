@@ -23,6 +23,49 @@ open class MyOperation: Operation {
     }
 }
 
+open class CancelOperationSample {
+    private let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    private var operationQueue: OperationQueue?
+    
+    func doMultiAsyncProcess() {
+        operationQueue = OperationQueue()
+        
+        let blockOperation = BlockOperation()
+        let currentQueue = operationQueue
+        blockOperation.completionBlock = { [weak self] in
+            if currentQueue == self?.operationQueue {
+                self?.operationQueue = nil
+            }
+        }
+        
+        list.forEach { value in
+            blockOperation.addExecutionBlock { [weak self] in
+                guard !blockOperation.isCancelled else { return }
+                Thread.sleep(forTimeInterval: Double.random(in: 1..<3))
+                guard !blockOperation.isCancelled else { return }
+                
+                self?.request(value: value, operation: blockOperation)
+            }
+        }
+        
+        operationQueue?.addOperation(blockOperation)
+    }
+    
+    func cancelMultiAsyncProcess() {
+        guard let queue = operationQueue else { return }
+        queue.cancelAllOperations()
+        operationQueue = nil
+    }
+    
+    func request(value: Int, operation: Operation) {
+        if operation.isCancelled {
+            print("request: cancel")
+        } else {
+            print("request: received result")
+        }
+    }
+}
+
 // MARK: - Source
 /*
 import Foundation
